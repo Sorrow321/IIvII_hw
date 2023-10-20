@@ -1,0 +1,7 @@
+venv
+weights/
+cache/
+faiss_index/
+__pycache__
+.ipynb_checkpoints
+nb/
