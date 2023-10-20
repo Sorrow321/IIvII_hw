@@ -14,6 +14,9 @@ COPY requirements.txt requirements.txt
 RUN pip3 install -U pip
 RUN pip3 install --upgrade pip
 RUN pip3 install -r requirements.txt
+RUN gdown 1ALUL9HRmv7vrTYN50_ORwWX9YuVGBqfI
+RUN mkdir weights
+RUN mv llama-2-7b-chat.Q4_K_M.gguf weights/llama-2-7b-chat.Q4_K_M.gguf
 COPY . .
 
 
